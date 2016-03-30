@@ -1,0 +1,4 @@
+.DS_STORE
+.vagrant
+public/local/vendor
+public/local/node_modules
