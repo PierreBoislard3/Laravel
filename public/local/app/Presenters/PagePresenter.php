@@ -33,13 +33,13 @@ class PagePresenter extends AbstractPresenter
 
     public function linkToPaddedTitle($link)
     {
-        $padding = str_repeat('&nbsp;', $this->depth * 4);
+        $padding = str_repeat('&mdash; &ensp;', $this->depth * 1);
 
         return $padding.link_to($link, $this->title);
     }
 
     public function paddedTitle()
     {
-        return str_repeat('&nbsp;', $this->depth * 4).$this->title;
+        return str_repeat('&mdash; &ensp;', $this->depth * 1).$this->title;
     }
 }
